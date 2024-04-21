@@ -1,0 +1,17 @@
+.details-area {
+    display: none;
+}
+
+#search-results-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: var(--space-5) 15%;
+}
+
+/* Screen size: Tablet & Mobile */
+@media only screen and (max-width: 720px) {
+    #search-results-area {
+        margin: var(--space-5) 7%;
+    }
+}

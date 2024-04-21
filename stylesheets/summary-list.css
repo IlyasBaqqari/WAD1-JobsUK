@@ -1,0 +1,12 @@
+.summary-list {
+    width: 100%;
+    max-width: 250px;
+}
+
+.summary-list > tbody > tr > td {
+    padding: var(--space-1) 0;
+}
+
+.summary-list > tbody > tr > .value {
+    font-weight: bold;
+}

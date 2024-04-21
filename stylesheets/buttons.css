@@ -1,0 +1,93 @@
+/* Regular button */
+.button {
+    padding: 4px 16px;
+    border: solid var(--colour-dark) 4px;
+    background-color: var(--colour-dark);
+    color: var(--colour-light);
+}
+
+.button:hover {
+    background-color: var(--colour-light);
+    color: var(--colour-dark);
+    cursor: pointer;
+    transition: all 75ms ease;
+}
+
+/* Secondary button */
+.button-secondary {
+    padding: 4px 16px;
+    border: solid var(--colour-dark) 4px;
+    background-color: var(--colour-light);
+    color: var(--colour-dark);
+}
+
+.button-secondary:hover {
+    background-color: var(--colour-dark);
+    color: var(--colour-light);
+    cursor: pointer;
+    transition: all 75ms ease;
+}
+
+/* Link button */
+.button-link {
+    background: none;
+    padding: 0 8px;
+    margin: 0 4px;
+    border: 0;
+    color: var(--colour-dark);
+}
+
+.button-link:hover {
+    border-bottom: solid var(--colour-dark) 4px;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+/* Dark link button*/
+.button-link-dark {
+    background: none;
+    padding: 0 8px;
+    margin: 0 4px;
+    border: 0;
+    color: var(--colour-neutral);
+}
+
+.button-link-dark:hover {
+    border-bottom: solid var(--colour-light) 4px;
+    cursor: pointer;
+    color: var(--colour-light);
+    transition: all 200ms ease;
+}
+
+.button-link:focus, .button-link-dark:focus {
+    outline: none;
+    background-color: var(--colour-neutral);
+}
+
+.button-link-dark:focus {
+    color: var(--colour-dark);
+}
+
+.button-link-dark:hover:focus {
+    background: none;
+    color: var(--colour-light);
+}
+
+.button, .button-secondary, .button-link, .button-link-dark {
+    font-weight: bold;
+    font-size: var(--font-size-text-2);
+    font-family: var(--font-family-body);
+    text-decoration: none;
+    transition: all 150ms ease;
+}
+
+.button-container {
+    margin: var(--space-4) 0 var(--space-5);
+}
+
+/* Screen size: Mobile */
+@media only screen and (max-width: 480px) {
+    .button, .button-secondary, .button-link, .button-link-dark {
+        font-size: var(--font-size-text-3);
+    }
+}

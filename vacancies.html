@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+    <title>Vacancy Search - JobsUK</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="JobsUK vacancy search. Find your dream role right here, right now.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./images/favicon.ico">
+</head>
+<body>
+<nav id="nav">
+    <h1><a href="./index.html">JobsUK</a></h1>
+    <ul>
+        <li><a href="./index.html" class="button-link">Home</a></li>
+        <li><a href="#" class="button">Vacancies</a></li>
+        <li><a href="./pay.html" class="button">Calculator</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section class="informational" id="description">
+        <h1>Search vacancies</h1>
+        <p>
+            Explore recent job vacancies across the UK effortlessly. To use this tool, enter keywords or a job title
+            into the search bar and click <b>Search</b> to display the ten newest relevant job listings. You can also
+            click <b>Search</b> without entering anything to load the ten newest job listings posted.
+        </p>
+        <p>
+            To see more information, click <b>Details</b> on any job listing to bring up its associated summary. Then,
+            if you want to find out more, click <b>View original listing</b> to open the job listing page.
+        </p>
+    </section>
+
+    <div id="search-area">
+        <form name="vacancy-search" class="search-form">
+            <label for="job-title">Job title</label>
+            <div class="search-bar">
+                <input id="job-title" name="job-title" type="text" maxlength="50" placeholder="">
+                <button id="search-button" type="submit" class="button">Search</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="search-results-area"></div>
+</main>
+
+<footer>
+    <p>© <b>JobsUK</b> 2024</p>
+    <div>
+        <a class="button-link-dark" href="#nav">Back to top</a>
+    </div>
+</footer>
+
+
+<script type="module" src="./scripts/vacancies/vacancies.js"></script>
+</body>
+</html>

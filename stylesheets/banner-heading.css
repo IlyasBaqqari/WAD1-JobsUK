@@ -1,0 +1,8 @@
+.banner-heading {
+    margin: var(--space-6) 0 0;
+    padding: var(--space-1) 15%;
+    background-image: url('../images/laptop.jpg');
+    background-size: initial;
+    background-position: top;
+    color: var(--colour-light);
+}

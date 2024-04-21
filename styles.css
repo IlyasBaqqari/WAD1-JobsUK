@@ -1,0 +1,94 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Import stylesheets*/
+@import url('./stylesheets/buttons.css');
+@import url('./stylesheets/card.css');
+@import url('./stylesheets/split-halves.css');
+@import url('./stylesheets/split-thirds.css');
+@import url('./stylesheets/banner-heading.css');
+@import url('./stylesheets/navigation-bar.css');
+@import url('./stylesheets/hero.css');
+@import url('./stylesheets/main.css');
+@import url('./stylesheets/footer.css');
+@import url('./stylesheets/informational.css');
+@import url('./stylesheets/summary-list.css');
+@import url('./stylesheets/form.css');
+@import url('./stylesheets/search-bar.css');
+@import url('./stylesheets/key-value.css');
+@import url('./stylesheets/result.css');
+@import url('./stylesheets/pages/calculator.css');
+@import url('./stylesheets/pages/vacancies.css');
+
+/* Global variables */
+:root {
+    /* Font */
+    --font-family-heading: "Bricolage Grotesque", sans-serif;
+    --font-family-stylised: "Libre Franklin", sans-serif;
+    --font-family-text: "Lato", sans-serif;
+    --font-family-body: sans-serif;
+    --font-size-title-1: 48pt;
+    --font-size-title-2: 32pt;
+    --font-size-heading-1: 28pt;
+    --font-size-heading-2: 22pt;
+    --font-size-heading-3: 18pt;
+    --font-size-text-1: 16pt;
+    --font-size-text-2: 14pt;
+    --font-size-text-3: 12pt;
+    --font-size-text-4: 10pt;
+
+    /* Colour */
+    --colour-bg: #fdfdfd;
+    --colour-light: #fffcf2;
+    --colour-neutral: #ccc5b9;
+    --colour-secondary: #403d39;
+    --colour-dark: #252422;
+    --colour-success: #509439;
+
+    /* Spacing */
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 16px;
+    --space-4: 24px;
+    --space-5: 32px;
+    --space-6: 64px;
+    --space-7: 128px;
+    --space-8: 400px;
+}
+
+/* Global Styling */
+html {
+    background-color: var(--colour-dark);
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-text-2);
+    color: var(--colour-dark);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--colour-bg);
+}
+
+h1, h2 {
+    font-family: var(--font-family-heading);
+}
+
+p, td {
+    font-family: var(--font-family-text);
+}
+
+b {
+    font-family: var(--font-family-stylised);
+}
+
+*:focus {
+    outline: solid var(--colour-success) 2px;
+}
+
+/* Global Styling - Screen size: Mobile */
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: var(--font-size-text-3)
+    }
+}

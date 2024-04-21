@@ -1,0 +1,23 @@
+.card {
+    border: 0;
+    border-radius: var(--space-3);
+    background-color: var(--colour-neutral);
+}
+
+.card-text {
+    height: 100%;
+}
+
+/* Screen size: Tablet */
+@media only screen and (max-width: 720px) {
+    .card-text {
+        width: 80%;
+    }
+}
+
+/* Screen size: Mobile */
+@media only screen and (max-width: 480px) {
+    .card-text {
+        width: 90%;
+    }
+}

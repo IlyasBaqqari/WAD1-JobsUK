@@ -1,0 +1,50 @@
+.form-row {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    margin-bottom: var(--space-4);
+}
+
+label, .form-superlabel {
+    font-family: var(--font-family-stylised);
+    font-weight: bolder;
+    margin: var(--space-3) 0;
+}
+
+.form-sublabel {
+    margin: 0 var(--space-2);
+    font-weight: bold;
+}
+
+.input-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+input, select {
+    flex-shrink: 1;
+    padding: var(--space-2);
+    border: solid var(--colour-dark) 3px;
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-text-3);
+    background-color: var(--colour-bg);
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    outline: solid var(--colour-success) 2px;
+}
+
+.wide-input {
+    width: 100%;
+}
+
+/* Screen size: Mobile */
+@media only screen and (max-width: 480px) {
+    .input-row > input {
+        max-width: 40vw;
+    }
+}
+

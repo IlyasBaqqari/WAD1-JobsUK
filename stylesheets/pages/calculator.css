@@ -1,0 +1,31 @@
+#calculator-area {
+    margin: 0;
+}
+
+.calculator-area {
+    background-color: var(--colour-neutral);
+}
+
+.calculator-form {
+    margin: var(--space-3);
+    padding: var(--space-4);
+    border: solid var(--colour-dark) 4px;
+    background-color: var(--colour-light);
+}
+
+.calculator-form > h2 {
+    font-size: var(--font-size-heading-3);
+    margin: 0 0 var(--space-3);
+}
+
+#calculator-results-area {
+    display: none;
+    margin: var(--space-3) 0;
+}
+
+/* Screen size: Mobile */
+@media only screen and (max-width: 480px) {
+    .calculator-form {
+        padding: var(--space-3);
+    }
+}

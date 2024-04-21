@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+    <title>Pay Calculator - JobsUK</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="JobsUK pay calculator. Calculate your pay with just a few clicks.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./images/favicon.ico">
+</head>
+<body>
+<nav id="nav">
+    <h1><a href="./index.html">JobsUK</a></h1>
+    <ul>
+        <li><a href="./index.html" class="button-link">Home</a></li>
+        <li><a href="./vacancies.html" class="button">Vacancies</a></li>
+        <li><a href="#" class="button">Calculator</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section class="informational" id="description">
+        <h1>Calculate your pay</h1>
+        <p>
+            Easily calculate your earnings based on your wage and hours worked per week. To use this tool, enter the
+            information specified in the form below. Once entered, click <b>Calculate</b> to get your results. You
+            can do this as many times as you like to compare different salaries for different jobs.
+        </p>
+        <p>
+            To clear results you no longer need, click <b>Delete</b> to remove a result from the list.
+        </p>
+    </section>
+
+    <div id="calculator-area" class="split-thirds">
+        <div class="third calculator-area">
+            <form name="calculator" class="calculator-form">
+                <h2>Your details</h2>
+
+                <div class="form-row">
+                    <label for="job-title">Job title</label>
+                    <input class="wide-input" id="job-title" name="job-title" type="text" maxlength="50" required>
+                </div>
+
+                <div class="form-row">
+                    <p class="form-superlabel">How much are you paid?</p>
+                    <div class="input-row">
+                        <label for="pay" class="form-sublabel">£</label>
+                        <input id="pay" name="pay" type="number" min="0" step="0.01" required>
+
+                        <label for="time-frame" class="form-sublabel">per</label>
+                        <select id="time-frame" name="time-frame" required>
+                            <option label="..." hidden></option>
+                            <option value="hour">Hour</option>
+                            <option value="week">Week</option>
+                            <option value="month">Month</option>
+                            <option value="year">Year</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="hours-per-week">How many hours do you work per week?</label>
+                    <input id="hours-per-week" name="hours-per-week" type="number" min="0" max="84" step="0.5" required>
+                </div>
+
+                <button id="calculate-button" type="submit" class="button">Calculate</button>
+            </form>
+        </div>
+
+        <div id="calculator-results-area" class="two-thirds"></div>
+    </div>
+</main>
+
+<footer>
+    <p>© <b>JobsUK</b> 2024</p>
+    <div>
+        <a class="button-link-dark" href="#nav">Back to top</a>
+    </div>
+</footer>
+
+<script type="module" src="scripts/calculator/calculator.js"></script>
+</body>
+</html>

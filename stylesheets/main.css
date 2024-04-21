@@ -1,0 +1,26 @@
+main > section {
+    margin: var(--space-5) 15%;
+}
+
+main > section > h1 {
+    font-size: var(--font-size-heading-1);
+}
+
+main > section > p {
+    font-size: var(--font-size-text-1)
+}
+
+/* Screen size: Tablet & Mobile */
+@media only screen and (max-width: 720px) {
+    main > section {
+        margin: var(--space-5) 7%;
+    }
+
+    main > section > h1 {
+        font-size: var(--font-size-heading-2);
+    }
+
+    main > section > p {
+        font-size: inherit;
+    }
+}

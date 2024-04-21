@@ -1,0 +1,21 @@
+.key-value {
+    margin: var(--space-3) 0;
+}
+
+.key-value > p, .key-value > h3 {
+    margin: 0;
+    font-family: var(--font-family-stylised);
+    color: var(--colour-neutral);
+}
+
+.key-value > p > b {
+    font-style: normal;
+    color: var(--colour-light);
+}
+
+.key-value > .value-long-text {
+    font-style: normal;
+    color: var(--colour-bg);
+    max-height: var(--space-8);
+    overflow: scroll;
+}
